@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  tests:
+    build: .
+    environment:
+      - BROWSER=chrome
+      - BROWSER_VERSION=latest
+    volumes:
+      - ./allure-results:/app/allure-results
+
+  selenoid:
+    image: aerokube/selenoid:latest-release
+    network_mode: bridge
+    volumes:
+      - ./selenoid:/etc/selenoid
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: ["-conf", "/etc/selenoid/browsers.json", "-limit", "10"]
+    ports:
+      - "4444:4444"

@@ -1,0 +1,9 @@
+selenium==4.15.2
+pytest==7.4.3
+pytest-xdist==3.5.0
+allure-pytest==2.13.2
+allure-python-commons==2.13.2
+webdriver-manager==4.0.1
+ruff==0.1.5
+mypy==1.7.1
+types-requests==2.31.0.10
