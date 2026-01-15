@@ -28,7 +28,7 @@
 ## Установка
 1. Клонируйте репозиторий:
    ```bash
-   [git clone https://github.com/SergeyKurilko/alkotekaParser.git](https://github.com/winreit/scrapy](https://github.com/winreit/selenium_tests)
+   git clone https://github.com/winreit/selenium_tests
    ```
 2. Перейдите в каталог selenium_tests
    ```bash
